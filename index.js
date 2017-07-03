@@ -27,7 +27,7 @@ function mousePressed(){
     for (i = -1; i<=1; i++){
       for (j = -1; j<=1; j++){
         for (k = -1; k<=1; k++){
-          if (Math.abs(i)+Math.abs(j)+Math.abs(k) <= 1){
+          if (Math.abs(i)+Math.abs(j)+Math.abs(k) > 1){
             dimension = boxes[nombre].size/3;
             temp.push(new Box(boxes[nombre].pos.x + dimension*i , boxes[nombre].pos.y + dimension*j , boxes[nombre].pos.z + dimension*k, dimension));
           }
