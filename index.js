@@ -10,18 +10,7 @@ function draw(){
   rotateX(frameCount * 0.02, [0,0,0]);
   
   pointLight(250, 250, 250, 1, 1, 0);
-  ambientMaterial(250);
-  if (keyIsDown(UP_ARROW)){
-    for (i = 0; i<boxes.length; i++){
-      boxes[i].pos.z -= 0.02; 
-    }
-  }
-  if (keyIsDown(DOWN_ARROW)){
-    for (i = 0; i<boxes.length; i++){
-      boxes[i].pos.z += 0.02; 
-    }
-  }
-  
+  ambientMaterial(250);  
   for (i = 0; i<boxes.length; i++){
     push();
     translate(boxes[i].pos.x, boxes[i].pos.y, boxes[i].pos.z);
