@@ -2,7 +2,6 @@ boxes = [new Box(0, 0, 0, 200)]
 
 function setup(){
   createCanvas(500, 500, WEBGL);
-
 }
 
 function draw(){
